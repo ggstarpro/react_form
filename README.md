@@ -1,3 +1,6 @@
+# 概要
+[github](https://github.com/Shin-sibainu/inquiryform-tutorial)
+
 # 環境構築
 ```
 $ npx create-next-app@latest
@@ -28,4 +31,41 @@ $ npm run dev
 ```
 ✔ Which components would you like to add? › input
 ✔ Done.
+```
+
+* npx shadcn-ui@latest add form
+* npx shadcn-ui@latest add textarea
+
+# [react-hook-form](https://react-hook-form.com/)
+* `npm install react-hook-form`
+
+# [zod](https://zod.dev/?id=installation)
+* `npm install zod`
+
+# [zodResolver](https://github.com/react-hook-form/resolvers)
+* `npm install @hookform/resolvers`
+
+# [Resend](https://resend.com/) 類似サービス:AmazonSES, SendGrid
+* `$ npm install resend`
+## Create API Keys
+Name: RESEND_API_TEST
+Permission: Full access
+Domain: All domains
+RESEND_API_KEY=XXX
+
+# Postman
+POST http://localhost:3000/api/send
+
+# [react spinners](https://www.davidhu.io/react-spinners/)
+* `npm install react-spinners`
+
+# [react-toastify](https://www.npmjs.com/package/react-toastify)
+* `npm install react-toastify`
+
+# [Vercel](https://vercel.com/)
+## デプロイ
+```
+AddNew > Project > GithubRep
+環境変数 .envの内容を入力(NEXT_PUBLIC_BASE_URLはデプロイ後のドメイン名を入れる)
+Deployを押下
 ```
